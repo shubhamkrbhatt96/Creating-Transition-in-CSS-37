@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creating Transition in CSS 37</title>
+</head>
+<style>
+    body {
+        background-color: lightcoral;
+    }
+
+    #box {
+        color: darkblue;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 200px;
+        width: 200px;
+        background-color: aquamarine;
+
+
+        /* Those properties can be transitioned which values are continuous
+        /* don't transition binary properties it will not show effect on the console. */
+        /* like colors ,opacity, height, width,font-size can be transitioned*/
+
+        /* Introduction to the transition property. */
+
+        /* transition-property: background-color;
+        transition-duration: 2s;
+        /* ease-in means in the initial it starts to transition slow but later gets paced by speed in transition. */
+        /* similary we have ease-out and ease-in-out */
+        /* ease-in-out property slowly start and slowly end transition in css */
+        /* transition-timing-function: ease-in; */
+        /* transition-delay: 1s; */
+
+        /* transition shorthand property to sum up the property in one go. */
+        /* transition-property:all can be set to show changes in transition in all places . */
+        /* transition-property:background-color; */
+        transition: all 1s ease-in-out .3s;
+    }
+
+    /* effect of this transition property over the background-color of the box */
+    #box:hover {
+        background-color: green;
+        height: 400px;
+        width: 400px;
+        border-radius: 100px;
+        font-size: 50px;
+    }
+</style>
+
+<body>
+    <h3>This is CSS Transitions Tutorial.</h3>
+    <div class="container">
+        <!-- div#box -->
+        <div id="box">
+            This is my box.
+        </div>
+    </div>
+</body>
+
+</html>
